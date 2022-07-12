@@ -1,4 +1,4 @@
-let todoItems;
+let todoItems: any;
 
 // api
 function fetchTodoItems() {
@@ -16,15 +16,16 @@ function fetchTodos() {
   return todos;
 }
 
-function addTodo(todo) {
+//void 는 반환값이 없다.
+function addTodo(todo):void {
   todoItems.push(todo);
 }
 
-function deleteTodo(index) {
+function deleteTodo(index):void {
   todoItems.splice(index, 1);
 }
 
-function completeTodo(index, todo) {
+function completeTodo(index, todo):void {
   todo.done = true;
   todoItems.splice(index, 1, todo);
 }
