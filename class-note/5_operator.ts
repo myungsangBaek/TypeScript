@@ -5,8 +5,6 @@ function logMessage(value: any) {
 logMessage("hello");
 logMessage(100);
 
-// const tata: string | number | boolean;
-
 function logMessage1(value: string | number) {
   if (typeof value === "number") {
     value.toLocaleString();
@@ -36,6 +34,10 @@ function askSomeone(someone: Developer2 | Person2) {
   someone.age;
 }
 
+//실무에서 가장 많이 사용
+askSomeone({ name: "디벨로퍼", skill: "웹 개발" });
+askSomeone({ name: "한", age: 100 });
+
 //인터셉션 타입
 
 function askSomeone2(someone: Developer2 & Person2) {
@@ -44,5 +46,7 @@ function askSomeone2(someone: Developer2 & Person2) {
   someone.skill;
 }
 
-var aHan: string | number | boolean;
-var bHan: string & number & boolean;
+askSomeone2({ name: "디벨로퍼", skill: "웹 개발", age: 34 });
+
+// var aHan: string | number | boolean;
+// var bHan: string & number & boolean;
