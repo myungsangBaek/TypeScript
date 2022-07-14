@@ -36,7 +36,7 @@ interface StringArray {
   [index: number]: string;
 }
 
-const arr: StringArray = ["a", "b", "c"];
+// const arr: StringArray = ["a", "b", "c"];
 // arr[0] = "10";
 
 //딕셔너리 패턴

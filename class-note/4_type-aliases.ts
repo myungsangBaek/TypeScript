@@ -19,7 +19,7 @@ const han2: Person1 = {
 };
 
 type MyString = string;
-const str: MyString = "hello";
+// const str: MyString = "hello";
 
 type Todo = { id: string; title: string; done: boolean };
 
