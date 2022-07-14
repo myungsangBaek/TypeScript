@@ -32,4 +32,17 @@ interface Person2 {
 //공통된 속성만 접근 가능
 function askSomeone(someone: Developer2 | Person2) {
   someone.name;
+  someone.skill;
+  someone.age;
 }
+
+//인터셉션 타입
+
+function askSomeone2(someone: Developer2 & Person2) {
+  someone.age;
+  someone.name;
+  someone.skill;
+}
+
+var aHan: string | number | boolean;
+var bHan: string & number & boolean;
