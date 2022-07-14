@@ -37,4 +37,20 @@ interface StringArray {
 }
 
 const arr: StringArray = ["a", "b", "c"];
-arr[0] = "10"; //'a'
+// arr[0] = "10";
+
+//딕셔너리 패턴
+interface StringRegexDictionary {
+  [key: string]: RegExp;
+}
+
+const obj: StringRegexDictionary = {
+  sth: /abc/,
+  cssFile: /\.css$/,
+  jsFile: /\.js$/,
+};
+// obj['cssFile'] = 'a'
+
+Object.keys(obj).forEach(function (value) {
+  console.log(value);
+});
