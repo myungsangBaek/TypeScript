@@ -33,5 +33,8 @@ sum = function (a: number, b: number): number {
 
 //인덱싱
 interface StringArray {
-  a;
+  [index: number]: string;
 }
+
+const arr: StringArray = ["a", "b", "c"];
+arr[0] = "10"; //'a'
