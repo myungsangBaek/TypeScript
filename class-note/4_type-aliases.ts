@@ -13,7 +13,7 @@ const han1: Person = {
   age: 30,
 };
 
-const stark: Person1 = {
+const han2: Person1 = {
   name: "han",
   age: 30,
 };
