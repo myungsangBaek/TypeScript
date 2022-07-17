@@ -73,3 +73,20 @@ function logTextLength<T extends LengthType>(text: T): T {
 }
 
 logTextLength({ length: 10 });
+
+// 제네릭의 타입 제한 3 - keyof
+interface ShoppingItem {
+  name: string;
+  price: number;
+  stock: number;
+}
+
+//키들 중 한 가지가 제네릭
+
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T {
+  return itemOption;
+}
+
+// getShoppingItemOption(10);
+
+getShoppingItemOption("name");
