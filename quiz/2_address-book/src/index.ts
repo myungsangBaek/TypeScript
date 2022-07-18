@@ -105,4 +105,10 @@ class AddressBook {
   /* ------------------------------------------------ */
 }
 
+var vvv = document.querySelector("div") as HTMLDivElement;
+// if (vvv) {
+//   vvv.innerText;
+// }
+vvv.innerText;
+
 new AddressBook();
